@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Regal</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Scripts -->
+    <script defer src="assets/jquery-3.5.1.min.js"></script>
+    <script defer src="assets/jquery.inputmask.js"></script>
+    <script defer src="assets/inputmask.js"></script>
+    <script defer src="assets/main.js"></script>
+    <script defer src="assets/form.js"></script>
+</head>
+<body>
+
+    <div class="wheel-container">
+        <div class="logo">
+            <img class="logo__block" src="assets/img/logo.svg" alt="Logo">
+        </div>
+        <div class="wheel-block">
+            <div class="wheel-block-content">
+                <div class="wheel-circle"></div>
+                <div class="wheel-arrow"></div>
+                <img class="wheel-img wheel-img-animated" src="assets/img/wheel.svg" alt="Wheel">
+                <div class="wheel-logo"></div>
+                <div class="wheel-text">
+                    <span>Félicitations!</span>
+                    <span>Votre prime:</span>
+                    <span>100 tours</span>
+                </div>
+            </div>
+            <div class="wheel-button">
+                <button class="btn wheel-btn first-spin">
+                    Rotation
+                </button>
+            </div>
+        </div>
+        <img class="img-back lion" src="assets/img/lion.svg" alt="Lion">
+        <img class="img-back coins" src="assets/img/coins.svg" alt="Coins">
+        <img class="img-back diamonds" src="assets/img/diamond.svg" alt="Diamonds">
+        <img class="img-back small-lion" src="assets/img/lion-small.svg" alt="Small lion">
+        <img class="img-back slider" src="assets/img/slider-777.svg" alt="777">
+    </div>
+
+    <div class="wheel-modal" id="modal-window">
+        <div class="wheel-modal-logo">
+            <img class="logo__block" src="assets/img/logo.svg" alt="Logo">
+        </div>
+        <div class="wheel-modal-content">
+            <div class="popup">
+                <div class="popup__title">
+                    <span>Inscription</span>
+                </div>
+                <div class="popup__win">
+                    <span>Félicitations! Votre prime:</span>
+                    <span>100 tours</span>
+                </div>
+                <form id="reg-form">
+                    <div class="input">
+                        <input id="first_name" class="input__form" name="first_name" type="text" placeholder="Prénom">
+                        <label class="input__label" for="first_name">Prénom</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="input">
+                        <input id="last_name" class="input__form" name="last_name" type="text" placeholder="Nom de famille">
+                        <label class="input__label" for="last_name">Nom de famille</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="input phone">
+                        <input id="birthday" class="input__form" name="birthday" type="date" placeholder="dd/mm/yyyy">
+                        <label class="input__label" for="birthday">Date de naissance</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="input phone">
+                        <input id="phone" class="input__form" name="phone" type="tel" placeholder="+32 (xxx) xxx-xxx">
+                        <label class="input__label" for="phone">Téléphone</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="input">
+                        <input id="email" class="input__form" name="email" placeholder="Courriel">
+                        <label class="input__label" for="email">Courriel</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="input">
+                        <input id="password" class="input__form" name="password" type="password" placeholder="Mot de passe">
+                        <label class="input__label" for="password">Mot de passe</label>
+                        <span class="error-message">Nom invalide</span>
+                        <span class="vaid-icon"></span>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__form" type="checkbox" id="check-terms" name="check-terms">
+                        <label for="check-terms">Acepto los <span>términos y condiciones</span></label>
+                    </div>
+                    <div class="checkbox">
+                        <input class="checkbox__form" type="checkbox" id="check-promo" name="check-promo">
+                        <label for="check-promo">Recibir boletines informativos sobre promociones por correo electrónico y sms</label>
+                    </div>
+                    <input type="hidden" id="country">
+                    <input type="hidden" id="city">
+                    <input type="hidden" id="address">
+                    <input type="hidden" id="zip">
+                    <input type="hidden" id="registration_ip">
+                    <input type="hidden" id="affid">
+                    <input type="hidden" id="subaff">
+                    <input type="hidden" id="subaff1">
+                    <input type="hidden" id="subaff2">
+                    <button id="btn-submit" type="submit" class="btn btn-send" disabled>S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
